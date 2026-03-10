@@ -1,0 +1,14 @@
+import java.util.*;
+public class score_of_a_string {
+	public static void main(String[]args) {
+		String s="code";
+		int a=0;
+		int total=0;
+		for(int i=0;i<s.length()-1;i++) {
+			a=Math.abs(s.charAt(i)-s.charAt(i+1));
+			total+=a;
+		}
+		System.out.print(total);
+	}
+
+}
