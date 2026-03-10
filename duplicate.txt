@@ -1,0 +1,20 @@
+import java.util.*;
+public class find_duplicate {
+	public static void main(String[]args) {
+		int[] arr= {1,4,3,1};
+		boolean isduplicate=false;
+		Arrays.sort(arr);
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]==arr[i+1]) {
+				isduplicate=true;
+				break;
+			}
+		}
+		if(isduplicate)
+			System.out.println("Duplicate found");
+		else
+			System.out.print("No Duplicate found");
+		}
+	}
+
+
